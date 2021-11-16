@@ -1,0 +1,15 @@
+{
+  "name": "github_search_ui",
+  "version": "1.0.0",
+  "description": "search repos and users from github",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Nishant Shrivastava",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

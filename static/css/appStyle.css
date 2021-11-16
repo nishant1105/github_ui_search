@@ -1,0 +1,33 @@
+.disable-btn{
+    pointer-events: none;
+}
+.enable-btn {
+    pointer-events: '';
+}
+.hidden-div{
+    display: none;
+}
+.visible-div{
+    display: block;
+}
+.user-div{
+    padding-bottom: 20px;
+}
+.avatar{
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: baseline;
+    padding-right: 10px;
+}
+.clickable{
+    cursor: pointer;
+}
+.inline-div{
+    display: inline-block;
+    width: 90%;
+}
+.h1 {
+    text-align: left;
+}

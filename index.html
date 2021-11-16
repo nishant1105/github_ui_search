@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Github User Search</title>
+    <!--DEFAULT Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <!--Custom Style-->
+    <link rel="stylesheet" href="css/appStyle.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">
+            Search repositories and users on Github
+        </h1>
+        <br>
+        <form id="searchForm" autocomplete="off">
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <input type="text" class="form-control" id="searchBar" placeholder="repository or user" required></input>
+                </div>
+                <div class="form-group col-xs-6">
+                    <button class="btn btn-small btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+        <br/>
+        <div id="totalCountOfRes">
+            <span id="numResultsFound"></span><span> repositories found</span>
+        </div>
+        <div id="queryErr" class="hidden-div">!ERROR ENCOUNTERED!</div>
+        <br/>
+        <div id="userSummaryContainer" class="container border border-primary">
+            <!-- TODO / IMPROVEMENT: Place holder for 5 items per page-->
+        </div>
+        <nav id="pageNavigation" aria-label="Page navigation">
+            <!--TODO: Add functionality like page numbers / jumping to first or last-->
+            <ul class="pagination">
+            <li id="previousBtn" class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li id="nextBtn" class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<script type="text/javascript" src="js/app.js"></script>
